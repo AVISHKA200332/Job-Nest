@@ -1,0 +1,189 @@
+html, body {
+	background: linear-gradient(to right, DarkViolet, SlateBlue);
+}
+
+.loginBox {
+    width: 300px;
+    padding: 35px;
+	padding-top:10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+	margin-left: 8px;
+	background-color: #fff;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+	animation: fromtop 0.8s ease-in-out;
+}
+
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loginBox h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+	margin-top:10px;
+}
+
+.textBox {
+    margin-bottom: 15px;
+}
+
+.textBox label {
+    display: block;
+    font-size: 16.7px;
+	margin-top:0px;
+	margin-bottom:2px;
+	margin-left:7.5px;
+}
+
+.textBox input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+	font-size:13.5px;
+}
+
+.rememberForgot input[type="checkbox"] {
+    margin-right: -62px;
+	margin-top:-9px;
+}
+
+.rememberForgot label {
+	margin-top:-12px;
+}
+
+.rememberForgot .forgotPassword {
+    color: Crimson;
+	margin-left:8px;
+	margin-right:-10px;
+	margin-top:-12px;
+    text-decoration: none;
+    font-size: 13.5px;
+}
+
+.loginBtn input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loginBtn input:hover {
+    background: linear-gradient(to right, #202020 30%, #000000 50%, #202020 70%);
+}
+
+.signupLink {
+    text-align: center;
+    margin-top: 10px;
+	margin-bottom: -6px;
+	font-size: 15.5px;
+}
+
+.signupBtn button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(to right, SlateBlue, DarkViolet);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-bottom:-10px;
+	transition: background 0.3s;
+}
+
+.signupBtn button:hover {
+    background: linear-gradient(to right, DarkViolet, SlateBlue);
+}
+.infoBox{
+	border: 1px solid #ccc;
+	margin: 20px auto;
+	margin-right: 8px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+	background-image: url('../images/infoBox.jpg');
+	background-size: cover;
+    background-position: center;
+	opacity:0.95;
+	background-color: #fff;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+	animation: frombottom 0.8s ease-in-out;
+}
+
+@keyframes frombottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.infoBox p{
+	color: white;
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 1),  
+         1px -1px 0 rgba(0, 0, 0, 1),  
+        -1px 1px 0 rgba(0, 0, 0, 1),  
+         1px 1px 0 rgba(0, 0, 0, 1);
+	line-height:0.4;
+	
+}
+.infoBox h2{
+	color: white;
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 1),  
+         1px -1px 0 rgba(0, 0, 0, 1),  
+        -1px 1px 0 rgba(0, 0, 0, 1),  
+         1px 1px 0 rgba(0, 0, 0, 1);
+	margin-bottom: -10px;
+}
+.infoBox h4{
+	color: white;
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 1),  
+         1px -1px 0 rgba(0, 0, 0, 1),  
+        -1px 1px 0 rgba(0, 0, 0, 1),  
+         1px 1px 0 rgba(0, 0, 0, 1);
+	margin-top: 0px;
+	
+}
+.infoBox img{
+	max-width: 100%;
+	height: auto;
+	margin-bottom:-40px;
+}
+
+.twoBoxes {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}

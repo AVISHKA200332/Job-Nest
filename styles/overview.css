@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/back1.png');
+	background-size: cover;
+	 background-position: left 50px bottom 50px;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to right, DarkViolet, SlateBlue);
+    color: white;
+}
+.homeLogo img{
+	width: 30px;
+    height: 30px;
+	margin-bottom:-10px;
+	margin-top:-10px;
+	cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.homeLogo img:hover {
+    transform: scale(1.06);
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.headerNav a:hover {
+    color: #cfd8dc;
+}
+.menuIcon img {
+    width: 20px;
+    height: 20px;
+	cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menuIcon img:hover {
+    transform: scale(1.09);
+}
+
+.mainContent {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #37474f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #bac2c6;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    color: #F8F8FF;
+}
+
+.mobileAppPromo p{
+	color:#cfd8dc;
+    margin-left:-8px;
+	margin-right:-8px;
+}
+.appLinks{
+	display: flex;
+}
+.appLinks img {
+    width: 100px;
+	margin-left:2px;
+	margin-top:6px;
+	cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.appLinks img:hover {
+    transform: scale(1.05);
+}
+
+.accountDetails {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.accountDetails h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+	margin-left:400px;
+}
+
+.detailsGrid {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    gap: 20px;
+}
+.detailsGrid a:hover {
+    color:DarkViolet;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	width:445px;
+	cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: scale(1.01);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.appsSection {
+    width: 200px;
+    padding: 20px;
+}
+
+.appsCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.appsCard h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.appsCard a {
+    display: block;
+    margin: 10px 0;
+    color: #1976d2;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change IT Admin Info - Job Nest</title>
+    <link rel="stylesheet" href="styles/adminstyles.css">
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            
+            const petName = prompt("Please enter your pet's name:");
+            if (petName === null || petName.trim() === "") {
+                alert("Pet name is required.");
+                return;
+            }
+
+            const confirmation = confirm("Are you sure you want to update your details?");
+            if (confirmation) {
+                document.getElementById('adminForm').submit();
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="Job Nest Logo"></div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">All Jobs</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="faq.php">FAQs</a></li>
+        </ul>
+    </nav>
+    <div class="header-right">
+        <a href="#">Login</a>/<a href="#">Sign Up</a>
+    </div>
+</header>
+
+<main>
+    <h1>Change Admin Info</h1>
+    <form id="adminForm" action="updateAdminInfo.php" method="POST" onsubmit="validateForm(event)">
+        <div class="form-group">
+            <label for="userID">User ID:</label>
+            <input type="text" id="userID" name="userID" required>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="currentPassword">Current Password:</label>
+            <input type="password" id="currentPassword" name="currentPassword" required>
+        </div>
+        <div class="form-group">
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <button type="submit">Update Info</button>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-logo">
+        <img src="images/logo.png" alt="Company Logo" />
+    </div>
+    <div class="footer-links">
+        <a href="contactUs.php">Contact Us</a>
+        <a href="TermsAndConditions.html">Terms and Conditions</a>
+        <a href="PrivacyAndPolicy.html">Privacy Policy</a>
+        <a href="FAQ.html">FAQs</a>
+    </div>
+    <div class="social-links">
+        <img src="images/fb logo.png" alt="Facebook">
+        <img src="images/insta logo.png" alt="Instagram">
+        <img src="images/linkedin logo.png" alt="LinkedIn">
+    </div>
+    <p>&copy; 2024 JobNest. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

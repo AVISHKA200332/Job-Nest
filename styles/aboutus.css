@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+/* header {
+    background-color: #007bff; 
+    color: white;
+    padding: 15px 20px;
+} */
+
+/* .logo img {
+    height: 50px; 
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e3e3e3; 
+}
+
+ .header-right {
+    display: inline-block;
+    float: right; 
+}  */
+
+/* Main Content Styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1, h2 {
+    color: #333333; /* Color for headings */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 15px;
+}
+
+/* Vision and Mission Box Styles */
+#vision-mission {
+    display: flex;
+    justify-content: space-between; /* Space out boxes */
+    margin-bottom: 20px;
+}
+
+.box {
+    flex: 1; /* Allow boxes to take equal space */
+    margin: 0 10px; /* Space between boxes */
+    padding: 20px;
+    background: #f9f9f9; /* Light background for boxes */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Event Images Styles */
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+}
+
+.images img {
+    width: 100%; /* Full width of container */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Footer Styles 
+ footer {
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; 
+} 
+
+.footer-logo img {
+    height: 40px; 
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+.social-links img {
+    height: 25px; 
+    margin: 0 5px; 
+}
+
+p {
+    margin: 5px 0; 
+}
+*/

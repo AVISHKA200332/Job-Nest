@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/header and footer.css">
+	
+	<link rel="stylesheet" href="styles/signup.css">
+	</head>
+<body>
+<header>
+    <div class="logo"><img src="images/logo.png" alt="Job Nest Logo"></div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="jobsearch.html">All Jobs</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="header-right">
+        <a href="login.html">Login</a>/<a href="signup.html">Sign Up</a>
+    </div>
+</header>
+	<div class="twoBoxes">
+	<div class="infoBox">
+	
+	<h2>Job Nest</h2>
+	<h4>Your Dream Job Awaits!</h4>
+	<br><br><br><br><br><br><br><br>
+	<p>Connecting you with the best opportunities</p>
+	<p>to shape your future</p>
+	
+</div>
+	<div class="loginBox">
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="POST">
+        <div class="textBox">
+			<label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Create Username">
+        </div>
+		
+        <div class="textBox">
+			<label for="fullname">Fullname</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name">
+        </div>
+		
+		<div class="textBox">
+			<label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+        </div>
+		
+		<div class="textBox">
+			<label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create Password">
+			<span id="togglePassword" style="cursor:pointer;">👁️‍🗨️</span>
+			<span id="passwordStrength"></span>
+        </div>
+		
+		<div class="textBox">
+			<label for="repassword">Confirm Password</label>
+            <input type="password" id="repassword" placeholder="Re-enter Password">
+        </div>
+		
+		<div class="signupBtn">
+				<button type="submit"href="#">Sign Up</a></button>
+        </div>
+    </form>
+		<br>
+        <div class="newlink">
+            <p>Already have an account?</p>
+			<a href="login.html" class="loginlink">Log In</a>
+		</div>
+</div>
+	</div>
+	
+	<script src="scripts/signup.js"></script>
+
+</body>
+<footer>
+    <div class="footer-logo">
+        <img src="images/logo.png" alt="Company Logo" />
+    </div>
+    <div class="footer-links">
+        <a href="contactUs.php">Contact Us</a>
+        <a href="TermsAndConditions.html">Terms and Conditions</a>
+        <a href="PrivacyAndPolicy.html">Privacy Policy</a>
+        <a href="FAQ.html">FAQs</a>
+    </div>
+    <div class="social-links">
+        <img src="images/fb logo.png" alt="Facebook">
+        <img src="images/insta logo.png" alt="Instagram">
+        <img src="images/linkedin logo.png" alt="LinkedIn">
+    </div>
+    <p>&copy; 2024 JobNest. All rights reserved.</p>
+</footer>
+</html>
